@@ -1,0 +1,93 @@
+$bg-primary: #eff3f6;
+$primary-light: #838fa5;
+$secondary: #198754;
+$secondary-light: #00be15;
+$base-color: #004f09;
+$base-bg-light: rgba(0, 190, 21, 0.1);
+$base-white: #ffffff;
+$hover-color: #e1f8e9;
+
+.text-primary {
+   color: $base-color !important;
+}
+
+// scame color
+$colors-light: (
+   bg-primary: #dfdfdf,
+   bg-secondary: #fff,
+   base: #11703b,
+   text-base: #979da5,
+   text-deep: #424141,
+   text-deep-in: #424141,
+   text-white: #ffffff,
+   bg-footer-w: #f7f7f7,
+   bg-footer: #1a1f22,
+   text-deep-f: #ffff,
+   hover-bg: #EAF9F2,
+   hover-color: #009F6E,
+);
+
+//dark theme
+$colors-dark: (
+   bg-primary: #212529,
+   bg-secondary: rgba(95, 95, 95, 0.301),
+   base: #11703b,
+   text-deep: #fff,
+   bg-footer: #1a1f22,
+   text-deep-f: #fff,
+   hover-bg: #327d3e,
+   hover-color: #f8f8f8,
+);
+
+//converting scss variable into css variable
+:root {
+   @each $name, $color in $colors-light {
+      --color-#{$name}: #{$color};
+   }
+   --theme: "light";
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      @each $name, $color in $colors-dark {
+         --color-#{$name}: #{$color};
+      }
+      --theme: "dark";
+   }
+}
+//creating a function to get color instead of using css varible
+@function getColor($color-name) {
+   @return var(--color-#{$color-name});
+}
+
+.text-base {
+   color: getColor(text-base);
+}
+
+.color-indigo-300 {
+   color: #a970f0!important;
+}
+.color-blue-300 {
+   color: #59AAF8!important;
+}
+.color-purple-300 {
+   color: #AD8ED5!important;
+}
+.color-pink-300 {
+   color: #F381B2!important;
+}
+.color-red-300 {
+   color: #F8818F!important;
+}
+.color-orange-300 {
+   color: #FFAF7A!important;
+}
+.color-yellow-300 {
+   color: #FFD879!important;
+}
+.color-green-300 {
+   color: #62B89A!important;
+}
+.color-teal-300 {
+   color: #53E1C3!important;
+}
