@@ -135,11 +135,19 @@ h6 {
 .fw-900 {
    font-weight: 900 !important;
 }
+/**
+ * @todo Boxicon
+ * @date 31-03-22 
+ */
+
+ .bx {
+   line-height: 1.2;
+}
 
 .sidebar {
-   // position: absolute;
-   // left: 0;
-   // top: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
    height: 100vh;
    width: 280px;
    background: getColor(bg-secondary);
@@ -276,26 +284,20 @@ h6 {
    }
 }
 .header {
+   margin-left: 280px;
    background: getColor(bg-secondary);
    padding: 12px 40px;
    border-bottom: 1px solid getColor(hover-bg);
 }
 .content {
-   width: calc(100vw - (280px));
+   margin-left: 280px;
    padding: 8px;
    .search-filter {
-      // display: grid;
-      // grid-template-columns: auto 75px;
-      // grid-gap: 10px;
       align-items: center;
      .card{
       background: getColor(bg-secondary);
      }
-      // padding: 12px 40px;
       form {
-         // display: grid;
-         // grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-         // grid-gap: 10px;
          .form-field {
             display: flex;
             flex-direction: column;
@@ -320,6 +322,12 @@ h6 {
          }
          .search-btn{
             button{
+               background: #007AD1;
+               border: none;
+               padding: 6px 10px;
+               border-radius: 4px;
+               font-size: 14px;
+               color: #ffff;
 
             }
          }
@@ -339,7 +347,7 @@ h6 {
 .select2-results__options::-webkit-scrollbar-thumb {
    border-radius: 5px;
    background-clip: content-box;
-   background-color: getColor(hover-bg);
+   background-color: getColor(text-base);
 }
 
 .select2-container--default {
@@ -352,11 +360,11 @@ h6 {
       box-shadow: 0 8px 12px #24242462;
       min-width: 180px;
       line-height: 1.2;
-      background: getColor(bg-secondary);
+      // background: getColor(bg-secondary);
    }
    .select2-search__field {
       background: transparent;
-      color: getColor(text-deep);
+      color: getColor(text-deep-in);
    }
 
    .select2-selection--single {
