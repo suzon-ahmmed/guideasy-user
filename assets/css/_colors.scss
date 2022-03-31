@@ -8,14 +8,14 @@ $base-white: #ffffff;
 $hover-color: #e1f8e9;
 
 .text-primary {
-   color: $base-color !important;
+   color: #009F6E !important;
 }
 
 // scame color
 $colors-light: (
    bg-primary: #dfdfdf,
    bg-secondary: #fff,
-   base: #11703b,
+   base: #009F6E,
    text-base: #979da5,
    text-deep: #424141,
    text-deep-in: #424141,
@@ -30,7 +30,7 @@ $colors-light: (
 //dark theme
 $colors-dark: (
    bg-primary: #212529,
-   bg-secondary: rgba(95, 95, 95, 0.301),
+   bg-secondary: #34373a,
    base: #11703b,
    text-deep: #fff,
    bg-footer: #1a1f22,
