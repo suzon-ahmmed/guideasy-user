@@ -46,7 +46,7 @@ function formatCustom(state) {
 			<div class="width-20 height-20 d-flex align-items-center justify-content-center bg-gradient-cyan-blue  rounded-2 ms-n1">
 				<i class="dataIcon ${$(state.element).attr('data-icon')}"></i>
 			</div>
-			<div class="flex-fill ps-3 pe-3">
+			<div class="flex-fill ps-2 pe-2">
 				<div class="font-weight-600">${state.text}</div>
 				<div class="select2-sub-txt">${$(state.element).attr('data-text')}</div>
 			</div>

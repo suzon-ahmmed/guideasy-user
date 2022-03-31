@@ -447,6 +447,13 @@ h6 {
 }
 
 .content .search-filter form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid #979da5ad;
   line-height: 1.1;
   border-radius: 4px;
@@ -455,8 +462,8 @@ h6 {
 }
 
 .content .search-filter form .form-field label {
-  padding-left: 10px;
   padding-top: 5px;
+  padding-left: 10px;
   padding-bottom: 3px;
 }
 
@@ -567,10 +574,6 @@ h6 {
   color: var(--color-hover-color);
 }
 
-.select2-container--default .select2-selection--single {
-  margin-top: -4px;
-}
-
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: var(--color-text-deep);
   padding: 0 10px;
@@ -578,6 +581,7 @@ h6 {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  line-height: 1.2;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
