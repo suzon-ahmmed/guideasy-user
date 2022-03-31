@@ -30,7 +30,9 @@
    <main>
       <section class="sidebar">
          <div class="position-relative brand-logo">
-            <img src="./assets/images/brand-logo.png" alt="Logo">
+            <a href="index.html">
+               <img src="./assets/images/brand-logo.png" alt="Logo">
+            </a>
          </div>
          <div class="d-flex flex-column justify-content-between all-menu">
             <div>
@@ -72,10 +74,18 @@
                   </div>
                   <ul>
                      <li>
-                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                        <a href="holiday.html" class="d-flex justify-content-between align-items-center">
                            <div class="d-flex align-items-center">
                               <i class='bx bxs-zap'></i>
-                              <span>Boost</span>
+                              <span>Holiday</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bxs-plane-take-off'></i>
+                              <span>Flight</span>
                            </div>
                         </a>
                      </li>
@@ -83,7 +93,7 @@
                         <a href="javascript:;" class="d-flex justify-content-between align-items-center">
                            <div class="d-flex align-items-center">
                               <i class='bx bx-layer'></i>
-                              <span>Documents</span>
+                              <span>Guide</span>
                            </div>
                         </a>
                      </li>
@@ -316,13 +326,21 @@
          </div>
          <div class="row g-2 mt-1">
             <div class="col-xl-9">
-               <div class="card mt-2 flight-ticket">
-                  <div class="ticket-body">
-                     <div class="body-left">
-                        <img src="./assets/images/w-3.jpg" width="230px" alt="">
-                        <div> Short Break to Mussoorie Break to Mussoorie</div>
+               <div class="card package-card">
+                  <div class="card-body">
+                     <div class="d-flex flex-wrap package-details">
+                        <div class="tour-image">
+                           <img src="./assets/images/w-3.jpg" alt="">
+                        </div>
+                        <div>
+                           <p class="text-dark fs-20">Cox's Bazar - The Never Ending Sea Beach</p>
+                           <p><i class="fa-solid fa-location-dot me-1"></i> Cox's Bazar, Bangladesh</p>
+                           <div class="d-flex mt-2">
+                              <span class="custom-badge fs-16 fw-900">5D/6N</span>
+                           </div>
+                        </div>
                      </div>
-                     <div class="body-right lh-sm">
+                     <div class="pricing lh-sm">
                         <div class="me-3 fw-bold text-end">
                            <p class="fs-14 text-decoration-line-through">BDT 13500</p>
                            <p class="fs-18 text-dark">BDT 12200</p>
@@ -333,9 +351,9 @@
                         </div>
                      </div>
                   </div>
-                  <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 ticket-footer">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 card-footer">
                      <div class="d-flex align-items-center lh-sm">
-                        <div class=" fw-900 fare-type">Publish</div>
+                        <div class=" fw-900 custom-badge">Publish</div>
                         <ul class="d-flex fs-12">
                            <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="2 Flight">
                               <i class="fa-solid fa-plane"></i>
@@ -360,290 +378,6 @@
                               aria-expanded="false" aria-controls="">
                               Package Details
                            </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="collapse" id="package-details_1">
-                     <div class="flight-details">
-                        <ul class="nav nav-tabs">
-                           <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active"
-                                 href="#FlightDetails">Flight Details</a></li>
-                           <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#FareSummary">Fare
-                                 Summary</a></li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#DiscountGross">Discount & Gross</a>
-                           </li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#Baggage">Baggage</a>
-                           </li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#Cancellation">Cancellation</a>
-                           </li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#DateChange">Date Change</a>
-                           </li>
-                        </ul>
-                        <div class="tab-content mt-2">
-                           <div id="FlightDetails" class="tab-pane active">
-                              <div class="d-flex">
-                                 <div class="border border-success rounded-3 px-2 py-1 fs-14 text-primary">
-                                    <span>Dhaka</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                    <span>Kolkata</span>
-                                 </div>
-                              </div>
-                              <div class="d-flex mt-2 details-content">
-                                 <div class="left-details">
-                                    <div class="position-absolute">
-                                       <i class="fa-solid fa-plane"></i>
-                                       <i class="fa-solid fa-circle"></i>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                       <div class="fs-14 text-dark fw-900">
-                                          <span>18:35</span>
-                                          <span class="px-2">.</span>
-                                          <span>11 Apr 2022</span>
-                                          <span class="px-2">.</span>
-                                          <span>Dhaka (DAC)</span>
-                                          <span class="fs-12 text-base fw-400">Terminal-2</span>
-                                       </div>
-                                       <div class="my-2 fs-12 fw-bold">
-                                          <span>Travel time:</span>
-                                          <span class="text-danger">1h 05m</span>
-                                       </div>
-                                       <div class="fs-14 text-dark fw-900 mb-2">
-                                          <span>19:40</span>
-                                          <span class="px-2">.</span>
-                                          <span>11 Apr 2022</span>
-                                          <span class="px-2">.</span>
-                                          <span>Kolkata (CCU)</span>
-                                       </div>
-                                    </div>
-                                    <div class="d-flex mt-2">
-                                       <img class="me-2" src="./assets/images/us-bd.png" width="27" height="23" alt="">
-                                       <div class="test-base fs-12 fw-bold lh-normal">
-                                          <div class="mb-2 d-flex flex-wrap">
-                                             <p>Singapore Airlines</p>
-                                             <p><span class="px-2">.</span> SQ516</p>
-                                             <p><span class="px-2">.</span>Economy</p>
-                                             <p><span class="px-2">.</span>7M8</p>
-                                             <p><span class="px-2">.</span>
-                                                <i class="fa-solid fa-couch"></i> B(9)
-                                             </p>
-                                          </div>
-                                          <div class="d-flex flex-wrap">
-                                             <p class="pe-2">Adult</p>
-                                             <p>
-                                                <span class="px-2">.</span>
-                                                <i class="fa-solid fa-suitcase-rolling"></i> Check-in:
-                                                <span class="text-dark">30kg</span>
-                                             </p>
-                                             <p>
-                                                <span class="px-2">.</span>
-                                                <i class="fa-solid fa-suitcase"></i>
-                                                Cabin:
-                                                <span class="text-dark">1 Piece</span>
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="right-details">
-                                    <ul class="fs-14">
-                                       <li>
-                                          <i class="fa-solid fa-wheelchair"></i>
-                                          <span>76 cm seat pitch</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-plane"></i>
-                                          <span>737 MAX (narrowbody)</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-table-cells-large"></i>
-                                          <span>3-3 seat layout</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-wifi"></i>
-                                          <span>Basic web browsing (fee)</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-brands fa-usb"></i>
-                                          <span>Power & USB outlets</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-tv"></i>
-                                          <span>Seatback on-demand video</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-utensils"></i>
-                                          <span>Meal provided</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-martini-glass"></i>
-                                          <span>Alcohol & beverages provided</span>
-                                       </li>
-                                    </ul>
-
-                                    <div class="text-primary fw-bold fs-14 mt-2 flight-show-more-btn">+ Show More
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div id="FareSummary" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                    <tr>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                    </tr>
-                                    <tr>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div id="DiscountGross" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div id="Baggage" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div id="Cancellation" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                              <div class="mt-2 border rounded-3 border-danger bg-danger bg-opacity-10 px-2 py-1 d-flex">
-                                 <div><i class="fa-solid fa-triangle-exclamation fs-18 text-danger me-2"></i></div>
-                                 <div class="text-danger fs-12">*Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Eius laboriosam voluptas beatae quidem consequuntur molestias tempore nisi.
-                                    Earum, omnis sit! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Culpa, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-                                    quasi ipsam vitae vero impedit incidunt iste? Cum quis doloribus porro?</div>
-                              </div>
-                           </div>
-                           <div id="DateChange" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-
-
-                              <div class="mt-2 border rounded-3 border-danger bg-danger bg-opacity-10 px-2 py-1 d-flex">
-                                 <div><i class="fa-solid fa-triangle-exclamation fs-18 text-danger me-2"></i></div>
-                                 <div class="text-danger fs-12">*Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Eius laboriosam voluptas beatae quidem consequuntur molestias tempore nisi.
-                                    Earum, omnis sit!</div>
-
-                              </div>
-                           </div>
                         </div>
                      </div>
                   </div>

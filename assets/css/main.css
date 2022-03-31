@@ -172,11 +172,11 @@ h6 {
 }
 
 .fs-16 {
-  font-size: calc(14px + (16 - 14) * (100vw - 340px) / (1400 - 340));
+  font-size: calc(14px + (16 - 14) * (100vw - 340px) / (1400 - 340)) !important;
 }
 
 .fs-18 {
-  font-size: calc(16px + (18 - 16) * (100vw - 340px) / (1400 - 340));
+  font-size: calc(16px + (18 - 16) * (100vw - 340px) / (1400 - 340)) !important;
 }
 
 .fs-20 {
@@ -529,6 +529,17 @@ h6 {
   border-radius: 4px;
 }
 
+.custom-badge {
+  color: var(--color-base);
+  font-size: 11px;
+  padding: 1px 5px !important;
+  text-transform: uppercase;
+  border: 1px var(--color-base) solid;
+  border-radius: 3px;
+  margin-right: 10px;
+  line-height: 1;
+}
+
 .flight-ticket {
   padding: 10px 15px;
   background: var(--color-bg-secondary);
@@ -764,7 +775,89 @@ h6 {
   overflow-y: scroll !important;
 }
 
-@media only screen and (max-width: 1199.98px) {
+.package-card {
+  padding: 10px 15px;
+  background: var(--color-bg-secondary);
+}
+
+.package-card .card-body {
+  border-bottom: 1px solid #88888821;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.package-card .card-body .package-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  border-right: 1px #88888821 solid;
+}
+
+.package-card .card-body .package-details .tour-image {
+  padding-right: 10px;
+}
+
+.package-card .card-body .package-details .tour-image img {
+  width: 160px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+
+.package-card .card-body .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 8px;
+  min-width: 220px;
+}
+
+.package-card .card-footer {
+  padding: 0;
+  border-top: none;
+  background: transparent;
+}
+
+.package-card .card-footer .fare-type {
+  color: var(--color-base);
+  font-size: 11px;
+  padding: 1px 5px;
+  text-transform: uppercase;
+  border: 1px var(--color-base) solid;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.package-card .card-footer ul li {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.package-card .card-footer ul li:last-child {
+  margin-right: 0;
+}
+
+.package-card .card-footer ul li i:hover {
+  color: var(--color-base);
+}
+
+@media only screen and (max-width: 1339.98px) {
   .flight-ticket .ticket-body .body-left {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

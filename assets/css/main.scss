@@ -88,10 +88,10 @@ h6 {
    font-size: 14px !important;
 }
 .fs-16 {
-   font-size: calc(14px + (16 - 14) * (100vw - 340px) / (1400 - 340));
+   font-size: calc(14px + (16 - 14) * (100vw - 340px) / (1400 - 340))!important;
 }
 .fs-18 {
-   font-size: calc(16px + (18 - 16) * (100vw - 340px) / (1400 - 340));
+   font-size: calc(16px + (18 - 16) * (100vw - 340px) / (1400 - 340))!important;
 }
 .fs-20 {
    font-size: calc(18px + (20 - 18) * (100vw - 340px) / (1400 - 340));
@@ -401,6 +401,16 @@ h6 {
    border-radius: 4px;
 }
 //flight ticket
+.custom-badge {
+   color: getColor(base);
+   font-size: 11px;
+   padding: 1px 5px!important;
+   text-transform: uppercase;
+   border: 1px getColor(base) solid;
+   border-radius: 3px;
+   margin-right: 10px;
+   line-height: 1;
+}
 .flight-ticket {
    padding: 10px 15px;
    background: getColor(bg-secondary);
@@ -593,7 +603,69 @@ h6 {
 .scrole-ui {
    overflow-y: scroll !important;
 }
-@media only screen and (max-width: 1199.98px) {
+.package-card {
+   padding: 10px 15px;
+   background: getColor(bg-secondary);
+   .card-body {
+      border-bottom: 1px solid #88888821;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      .package-details {
+         display: flex;
+         padding-bottom: 8px;
+         padding-right: 8px;
+         border-right: 1px #88888821 solid;
+         .tour-image{
+            img{
+               width: 160px;
+               height: 100px;
+               object-fit: cover;
+               border-radius: 4px;
+            }
+            padding-right: 10px;
+         }
+      }
+      .pricing {
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         flex-wrap: wrap;
+         padding-bottom: 8px;
+         min-width: 220px;
+      }
+   }
+   .card-footer {
+      padding: 0;
+      border-top: none;
+      background: transparent;
+      .fare-type {
+         color: getColor(base);
+         font-size: 11px;
+         padding: 1px 5px;
+         text-transform: uppercase;
+         border: 1px getColor(base) solid;
+         border-radius: 3px;
+         margin-right: 10px;
+      }
+      ul {
+         li {
+            margin-left: 8px;
+            margin-right: 8px;
+            &:last-child {
+               margin-right: 0;
+            }
+            i {
+               &:hover {
+                  color: getColor(base);
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 1339.98px) {
    .flight-ticket {
       .ticket-body {
          .body-left {

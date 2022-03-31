@@ -15,12 +15,12 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
  * @param void
  * @return void
  */
- function seeMore() {
-   const showMoreBtn = document.querySelector(".flight-show-more-btn");
-   const showMoreUi = document.querySelector(".details-content .right-details ul");
-   showMoreBtn.addEventListener("click", () => {
-      //Toggle Nav
-      showMoreUi.classList.toggle("scrole-ui");
-   });
- }
- seeMore();
+// function seeMore() {
+//    const showMoreBtn = document.querySelector(".flight-show-more-btn");
+//    const showMoreUi = document.querySelector(".details-content .right-details ul");
+//    showMoreBtn.addEventListener("click", () => {
+//       //Toggle Nav
+//       showMoreUi.classList.toggle("scrole-ui");
+//    });
+// }
+// seeMore();
