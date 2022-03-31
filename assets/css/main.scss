@@ -139,11 +139,33 @@ h6 {
  * @todo Boxicon
  * @date 31-03-22 
  */
-
- .bx {
-   line-height: 1.2;
+.menu-expand-btn {
+   position: absolute;
+   top: 28%;
+   right: -10px;
+   background: transparent;
+   color: #338041;
+   border: 1px solid getColor(text-deep);
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+   text-align: center;
+   padding-right: 2px;
+   padding-top: 2px;
+   cursor: pointer;
+   &:hover {
+      transform: scale(1.05);
+   }
 }
 
+/**
+ * @todo Boxicon
+ * @date 31-03-22 
+ */
+
+.bx {
+   line-height: 1.2;
+}
 .sidebar {
    position: absolute;
    left: 0;
@@ -294,15 +316,13 @@ h6 {
    padding: 8px;
    .search-filter {
       align-items: center;
-     .card{
-      background: getColor(bg-secondary);
-     }
+      .card {
+         background: getColor(bg-secondary);
+      }
       form {
          .form-field {
-            display: flex;
-            flex-direction: column;
             border: 1px solid #979da5ad;
-            line-height: 1.2;
+            line-height: 1.1;
             border-radius: 4px;
             color: getColor(text-base);
             height: 48px;
@@ -316,19 +336,18 @@ h6 {
                border: none;
                outline: none;
                color: getColor(text-deep);
-               padding: 2px 10px;
+               padding: 1px 10px;
                font-size: 18px;
             }
          }
-         .search-btn{
-            button{
-               background: #007AD1;
+         .search-btn {
+            button {
+               background: #007ad1;
                border: none;
                padding: 6px 10px;
                border-radius: 4px;
                font-size: 14px;
                color: #ffff;
-
             }
          }
       }

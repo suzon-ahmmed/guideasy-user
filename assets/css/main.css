@@ -239,6 +239,31 @@ h6 {
  * @todo Boxicon
  * @date 31-03-22 
  */
+.menu-expand-btn {
+  position: absolute;
+  top: 28%;
+  right: -10px;
+  background: transparent;
+  color: #338041;
+  border: 1px solid var(--color-text-deep);
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  text-align: center;
+  padding-right: 2px;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.menu-expand-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/**
+ * @todo Boxicon
+ * @date 31-03-22 
+ */
 .bx {
   line-height: 1.2;
 }
@@ -422,15 +447,8 @@ h6 {
 }
 
 .content .search-filter form .form-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   border: 1px solid #979da5ad;
-  line-height: 1.2;
+  line-height: 1.1;
   border-radius: 4px;
   color: var(--color-text-base);
   height: 48px;
@@ -447,12 +465,12 @@ h6 {
   border: none;
   outline: none;
   color: var(--color-text-deep);
-  padding: 2px 10px;
+  padding: 1px 10px;
   font-size: 18px;
 }
 
 .content .search-filter form .search-btn button {
-  background: #007AD1;
+  background: #007ad1;
   border: none;
   padding: 6px 10px;
   border-radius: 4px;
