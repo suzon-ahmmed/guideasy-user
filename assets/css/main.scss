@@ -352,35 +352,6 @@ h6 {
    .card {
       background: getColor(bg-secondary);
    }
-   .search-filter {
-      align-items: center;
-      form {
-         .form-field {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #979da5ad;
-            line-height: 1.1;
-            border-radius: 4px;
-            color: getColor(text-base);
-            height: 48px;
-            label {
-               padding-top: 5px;
-               padding-left: 10px;
-               padding-bottom: 3px;
-            }
-            input {
-               background: transparent;
-               border: none;
-               outline: none;
-               color: getColor(text-deep);
-               padding: 1px 10px;
-               font-size: 18px;
-            }
-         }
-         .search-btn {
-         }
-      }
-   }
 }
 
 .btn-primary {
@@ -616,7 +587,8 @@ h6 {
          padding-bottom: 8px;
          padding-right: 8px;
          border-right: 1px #88888821 solid;
-         .tour-image{
+         width: calc(100% - 225px);
+         .package-image{
             img{
                width: 160px;
                height: 100px;
@@ -624,6 +596,12 @@ h6 {
                border-radius: 4px;
             }
             padding-right: 10px;
+         }
+         .package-name{
+            white-space: nowrap;
+            width: 390px;
+            overflow: hidden;
+            text-overflow: ellipsis;
          }
       }
       .pricing {
@@ -633,6 +611,9 @@ h6 {
          flex-wrap: wrap;
          padding-bottom: 8px;
          min-width: 220px;
+         .price{
+            text-align: end;
+         }
       }
    }
    .card-footer {
@@ -674,6 +655,27 @@ h6 {
          .from-to-details {
             width: 420px;
             margin-top: 5px;
+         }
+      }
+   }
+}
+@media only screen and (max-width: 1129.98px){
+   .package-card {
+      .card-body {
+         flex-direction: column;
+         .package-details {
+            width: 100%;
+            border-right: none;
+            .package-name{
+               width: calc(100%);
+            }
+         }
+         .pricing {
+            padding-top: 8px;
+            justify-content: space-between;
+            .price{
+               text-align: left;
+            }
          }
       }
    }
