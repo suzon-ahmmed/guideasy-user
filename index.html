@@ -39,10 +39,10 @@
                <div class="main-menu">
                   <ul>
                      <li>
-                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                        <a href="index.html" class="d-flex justify-content-between align-items-center">
                            <div class="d-flex align-items-center">
                               <i class='bx bx-layer'></i>
-                              <span>Index</span>
+                              <span>Dashboard</span>
                            </div>
                         </a>
                      </li>
@@ -82,7 +82,7 @@
                         </a>
                      </li>
                      <li>
-                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                        <a href="flight.html" class="d-flex justify-content-between align-items-center">
                            <div class="d-flex align-items-center">
                               <i class='bx bxs-plane-take-off'></i>
                               <span>Flight</span>
@@ -244,398 +244,109 @@
       </section>
       <section class="content">
          <div class="row g-2">
-            <div class="col-xl-9">
-               <div class="card flight-ticket">
-                  <div class="ticket-body">
-                     <div class="body-left">
-                        <div class="d-flex airline-details">
-                           <img src="./assets/images/us-bd.png" alt="">
-                           <div class="fw-bold lh-sm">
-                              <p class="fs-14 text-dark">US-Bangla Airlines</p>
-                              <p class="fs-12 text-muted">BS201</p>
-                           </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center from-to-details">
-                           <div class="lh-sm from-route">
-                              <div class="fs-18 text-dark">
-                                 <span>DAC</span>
-                                 <span class="fw-bold">10:00</span>
-                              </div>
-                              <div class="fs-12 fw-bold">
-                                 <p>Web 20 Apr</p>
-                                 <p>Dhaka</p>
-                              </div>
-                           </div>
-                           <div class="text-center fs-12 fw-500 duration-time">
-                              <div> 1h 10m</div>
-                              <i class="fa-solid fa-plane"></i>
-                              <hr>
-                              <i class="fa-solid fa-circle"></i>
-                              <div> 1 Stop via BKK</div>
-                           </div>
-                           <div class="lh-sm to-route">
-                              <div class="fs-18 text-dark">
-                                 <span>DAC</span>
-                                 <span class="fw-bold">10:00</span>
-                              </div>
-                              <div class="fs-12 fw-bold">
-                                 <p>Web 20 Apr</p>
-                                 <p>Dhaka</p>
-                              </div>
-                           </div>
+            <div class="col-xl-6">
+               <div class="card profile-card">
+                  <div class="card-header text-end">
+                     <a href="javascript:;"><i class='bx bx-dots-horizontal-rounded text-base fs-22'></i></a>
+                  </div>
+                  <div class="card-body pt-0 text-center">
+                     <img src="./assets/images/aamroni.jpg" width="85px" class="rounded-circle" alt="">
+                     <div class="text-dark fs-20 fw-500 pt-3"><span>Welcome, </span>aamroni<span></span></div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between border-top">
+                     <div class="d-flex border-end py-3 justify-content-center">
+                        <img src="./assets/images/svg/booling-list-1.svg" width="35px" alt="">
+                        <div class="ps-2 lh-sm">
+                           <p class="fs-12">Total Bookings</p>
+                           <p class="fs-18 fw-bold text-dark">31</p>
                         </div>
                      </div>
-                     <div class="body-right lh-sm">
-                        <div class="me-3 fw-bold text-end">
-                           <p class="fs-14 text-decoration-line-through">BDT 13500</p>
-                           <p class="fs-18 text-dark">BDT 12200</p>
-                        </div>
-                        <div>
-                           <a href="javascript:;" class="btn-primary ">Book Now</a>
+                     <div class="d-flex py-3 justify-content-center">
+                        <img src="./assets/images/svg/complete-list.svg" width="35px" alt="">
+                        <div class="ps-2 lh-sm">
+                           <p class="fs-12">Complete Bookings</p>
+                           <p class="fs-18 fw-bold text-dark">22</p>
                         </div>
                      </div>
                   </div>
-                  <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 ticket-footer">
-                     <div class="d-flex align-items-center lh-sm">
-                        <div class="fw-900 custom-badge">Publish</div>
-                        <ul class="d-flex fs-12">
-                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fast web browsing (fee)">
-                              <i class="fa-solid fa-wifi"></i>
-                           </li>
-                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Seatback on-demand video">
-                              <i class="fa-solid fa-tv"></i>
-                           </li>
-                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Meal provided">
-                              <i class="fa-solid fa-utensils"></i>
-                           </li>
-                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alcohol & beverages provided">
-                              <i class="fa-solid fa-martini-glass"></i>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="d-flex fs-14 fw-500 ">
-                        <div class="text-dark me-3">
-                           <i class="fa-solid fa-circle-question fs-12"></i>
-                           Refundable</div>
-                        <div>
-                           <a class="text-primary" data-bs-toggle="collapse" href="#card_2" role="button"
-                              aria-expanded="false" aria-controls="">
-                              Flight Details
-                           </a>
+               </div>
+            </div>
+            <div class="col-xl-6">
+               <div class="row g-2">
+                  <div class="col-sm-6">
+                     <div class="card d-card">
+                        <div class="card-header text-end">
+                           <a href="javascript:;"><i class='bx bx-dots-horizontal-rounded text-base fs-22'></i></a>
+                        </div>
+                        <div class="card-body d-flex align-items-start pt-0">
+                           <img src="./assets/images/svg/holiday-1.svg" width="45px" alt="">
+                           <div class="ps-2">
+                              <p class="text-dark fs-28 fw-bold">05</p>
+                              <p class="fs-14">Holidayes</p>
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="collapse" id="card_2">
-                     <div class="flight-details">
-                        <ul class="nav nav-tabs">
-                           <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active"
-                                 href="#FlightDetails">Flight Details</a></li>
-                           <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#FareSummary">Fare
-                                 Summary</a></li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#DiscountGross">Discount & Gross</a>
-                           </li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#Baggage">Baggage</a>
-                           </li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#Cancellation">Cancellation</a>
-                           </li>
-                           <li class="nav-item">
-                              <a data-bs-toggle="tab" class="nav-link" href="#DateChange">Date Change</a>
-                           </li>
-                        </ul>
-                        <div class="tab-content mt-2">
-                           <div id="FlightDetails" class="tab-pane active">
-                              <div class="d-flex">
-                                 <div class="border border-success rounded-3 px-2 py-1 fs-14 text-primary">
-                                    <span>Dhaka</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                    <span>Kolkata</span>
-                                 </div>
-                              </div>
-                              <div class="d-flex mt-2 details-content">
-                                 <div class="left-details">
-                                    <div class="position-absolute">
-                                       <i class="fa-solid fa-plane"></i>
-                                       <i class="fa-solid fa-circle"></i>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                       <div class="fs-14 text-dark fw-900">
-                                          <span>18:35</span>
-                                          <span class="px-2">.</span>
-                                          <span>11 Apr 2022</span>
-                                          <span class="px-2">.</span>
-                                          <span>Dhaka (DAC)</span>
-                                          <span class="fs-12 text-base fw-400">Terminal-2</span>
-                                       </div>
-                                       <div class="my-2 fs-12 fw-bold">
-                                          <span>Travel time:</span>
-                                          <span class="text-danger">1h 05m</span>
-                                       </div>
-                                       <div class="fs-14 text-dark fw-900 mb-2">
-                                          <span>19:40</span>
-                                          <span class="px-2">.</span>
-                                          <span>11 Apr 2022</span>
-                                          <span class="px-2">.</span>
-                                          <span>Kolkata (CCU)</span>
-                                       </div>
-                                    </div>
-                                    <div class="d-flex mt-2">
-                                       <img class="me-2" src="./assets/images/us-bd.png" width="27" height="23" alt="">
-                                       <div class="test-base fs-12 fw-bold lh-normal">
-                                          <div class="mb-2 d-flex flex-wrap">
-                                             <p>Singapore Airlines</p>
-                                             <p><span class="px-2">.</span> SQ516</p>
-                                             <p><span class="px-2">.</span>Economy</p>
-                                             <p><span class="px-2">.</span>7M8</p>
-                                             <p><span class="px-2">.</span>
-                                                <i class="fa-solid fa-couch"></i> B(9)
-                                             </p>
-                                          </div>
-                                          <div class="d-flex flex-wrap">
-                                             <p class="pe-2">Adult</p>
-                                             <p>
-                                                <span class="px-2">.</span>
-                                                <i class="fa-solid fa-suitcase-rolling"></i> Check-in:
-                                                <span class="text-dark">30kg</span>
-                                             </p>
-                                             <p>
-                                                <span class="px-2">.</span>
-                                                <i class="fa-solid fa-suitcase"></i>
-                                                Cabin:
-                                                <span class="text-dark">1 Piece</span>
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="right-details">
-                                    <ul class="fs-14">
-                                       <li>
-                                          <i class="fa-solid fa-wheelchair"></i>
-                                          <span>76 cm seat pitch</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-plane"></i>
-                                          <span>737 MAX (narrowbody)</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-table-cells-large"></i>
-                                          <span>3-3 seat layout</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-wifi"></i>
-                                          <span>Basic web browsing (fee)</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-brands fa-usb"></i>
-                                          <span>Power & USB outlets</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-tv"></i>
-                                          <span>Seatback on-demand video</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-utensils"></i>
-                                          <span>Meal provided</span>
-                                       </li>
-                                       <li>
-                                          <i class="fa-solid fa-martini-glass"></i>
-                                          <span>Alcohol & beverages provided</span>
-                                       </li>
-                                    </ul>
-
-                                    <div class="text-primary fw-bold fs-14 mt-2 flight-show-more-btn">+ Show More
-                                    </div>
-                                 </div>
-                              </div>
+                  <div class="col-sm-6">
+                     <div class="card d-card">
+                        <div class="card-header text-end">
+                           <a href="javascript:;"><i class='bx bx-dots-horizontal-rounded text-base fs-22'></i></a>
+                        </div>
+                        <div class="card-body d-flex align-items-start pt-0">
+                           <img src="./assets/images/svg/flight-ticket.svg" width="45px" alt="">
+                           <div class="ps-2">
+                              <p class="text-dark fs-28 fw-bold">07</p>
+                              <p class="fs-14">Flight</p>
                            </div>
-                           <div id="FareSummary" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                    <tr>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                       <td>row 2</td>
-                                    </tr>
-                                    <tr>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                       <td>row 3</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="card d-card">
+                        <div class="card-header text-end">
+                           <a href="javascript:;"><i class='bx bx-dots-horizontal-rounded text-base fs-22'></i></a>
+                        </div>
+                        <div class="card-body d-flex align-items-start pt-0">
+                           <img src="./assets/images/svg/visa.svg" width="45px" alt="">
+                           <div class="ps-2">
+                              <p class="text-dark fs-28 fw-bold">02</p>
+                              <p class="fs-14">Visa</p>
                            </div>
-                           <div id="DiscountGross" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div id="Baggage" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                       <th>Row head</th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div id="Cancellation" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                              <div class="mt-2 border rounded-3 border-danger bg-danger bg-opacity-10 px-2 py-1 d-flex">
-                                 <div><i class="fa-solid fa-triangle-exclamation fs-18 text-danger me-2"></i></div>
-                                 <div class="text-danger fs-12">*Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Eius laboriosam voluptas beatae quidem consequuntur molestias tempore nisi.
-                                    Earum, omnis sit! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Culpa, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-                                    quasi ipsam vitae vero impedit incidunt iste? Cum quis doloribus porro?</div>
-                              </div>
-                           </div>
-                           <div id="DateChange" class="tab-pane fade">
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                    <tr>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Time frame</p>
-                                          <p>(From Scheduled flight departure)</p>
-                                       </th>
-                                       <th class="lh-sm">
-                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
-                                          <p>(Per passenger)</p>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <td>row 1 Lorem, ipsum dolor.</td>
-                                       <td>row 1</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-
-
-                              <div class="mt-2 border rounded-3 border-danger bg-danger bg-opacity-10 px-2 py-1 d-flex">
-                                 <div><i class="fa-solid fa-triangle-exclamation fs-18 text-danger me-2"></i></div>
-                                 <div class="text-danger fs-12">*Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Eius laboriosam voluptas beatae quidem consequuntur molestias tempore nisi.
-                                    Earum, omnis sit!</div>
-
-                              </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="card d-card">
+                        <div class="card-header text-end">
+                           <a href="javascript:;"><i class='bx bx-dots-horizontal-rounded text-base fs-22'></i></a>
+                        </div>
+                        <div class="card-body d-flex align-items-start pt-0">
+                           <img src="./assets/images/svg/guide-1.svg" width="45px" alt="">
+                           <div class="ps-2">
+                              <p class="text-dark fs-28 fw-bold">11</p>
+                              <p class="fs-14">Guide</p>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-
             </div>
-            <div class="col-xl-3">
+
+
+            <div class="col-lg-4">
                <div class="card">
-                  <div class="card-body">
-                     <div class="fs-22 text-dark">Card Header</div>
-                     <hr>
-                     <div class="fs-14">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus laudantium recusandae
-                        atque ad dolore cupiditate non maiores nesciunt hic? Illo temporibus dolores maiores ratione
-                        odio aspernatur nam, ad ex velit quaerat amet nesciunt voluptate corrupti deserunt non
-                        repudiandae sunt hic harum, impedit itaque dicta, asperiores reiciendis? Deserunt facere tenetur
-                        impedit asperiores voluptatum, modi neque magnam dolorem iure eligendi cupiditate repellendus
-                        nobis, amet saepe dicta eum molestiae aspernatur consequuntur repudiandae natus velit,
-                        exercitationem ratione perspiciatis? Ducimus officia fugit, obcaecati amet sed laborum dolores
-                        minus eos tempora aliquam in non enim at maiores cumque deleniti! Non inventore dolore
-                        architecto tenetur, quod sit pariatur culpa fuga beatae laborum nobis officiis minima
-                        consectetur explicabo natus doloremque. Modi hic esse distinctio laudantium similique est harum
-                        deserunt ipsa praesentium molestias id impedit, tenetur possimus eius saepe ipsam quod tempora
-                        nisi adipisci ad excepturi corrupti? Quas, ea dolor. Doloremque sed consectetur voluptatem neque
-                        earum molestias quidem dicta doloribus non magnam voluptatum totam, eaque libero! Earum corrupti
-                        excepturi, voluptates aut ducimus aspernatur. Nobis laboriosam, voluptas blanditiis quae in
-                        reiciendis minima amet itaque ducimus aspernatur consectetur, dicta alias temporibus assumenda
-                        pariatur a enim quidem expedita iusto? Modi soluta fuga repudiandae consequatur, sint maiores
-                        consequuntur dolores adipisci porro voluptatum.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore!</div>
+                  <div id="chart-circle"></div>
+               </div>
+            </div>
+            <div class="col-lg-8">
+               <div class="card">
+                  <div id="chart-bar"></div>
+               </div>
+            </div>
+            <div class="col-xl-12">
+               <div class="card">
+                  <div>
+                     <div id="line-adwords" class=""></div>
                   </div>
                </div>
             </div>
@@ -654,6 +365,7 @@
    <script src="./assets/js/select.js"></script>
    <script src="./assets/js/datepicker/datepicker.js"></script>
    <script src="./assets/js/datepicker/datepicker.en.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
    <script src="./assets/js/app.js"></script>
    <script type="text/javascript">
       $(".datepicker-here").datepicker({

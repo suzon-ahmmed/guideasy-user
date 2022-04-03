@@ -311,6 +311,7 @@ h6 {
   height: 100vh;
   width: 280px;
   background: var(--color-bg-secondary);
+  z-index: 1;
 }
 
 .sidebar .brand-logo {
@@ -479,6 +480,45 @@ h6 {
 
 .content .card {
   background: var(--color-bg-secondary);
+}
+
+.content .card-header {
+  border-bottom: none;
+  background: var(--color-bg-secondary);
+}
+
+.content .card-footer {
+  border-top: none;
+  background: var(--color-bg-secondary);
+}
+
+.content .border-top,
+.content .border-end,
+.content .border-start,
+.content .border-bottom {
+  border-color: var(--color-hover-bg) !important;
+}
+
+.content .profile-card {
+  height: 270px;
+  max-height: 270px;
+}
+
+.content .profile-card .card-footer {
+  padding: 0;
+}
+
+.content .profile-card .card-footer div {
+  width: 50%;
+}
+
+.content .d-card {
+  height: 131px;
+}
+
+.content #line-adwords text, .content #line-adwords span, .content #line-adwords tspan, .content #chart-bar text, .content #chart-bar span, .content #chart-bar tspan, .content #chart-circle text, .content #chart-circle span, .content #chart-circle tspan {
+  fill: var(--color-text-deep) !important;
+  color: var(--color-text-deep) !important;
 }
 
 .btn-primary {

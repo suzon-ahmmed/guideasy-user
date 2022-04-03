@@ -88,10 +88,10 @@ h6 {
    font-size: 14px !important;
 }
 .fs-16 {
-   font-size: calc(14px + (16 - 14) * (100vw - 340px) / (1400 - 340))!important;
+   font-size: calc(14px + (16 - 14) * (100vw - 340px) / (1400 - 340)) !important;
 }
 .fs-18 {
-   font-size: calc(16px + (18 - 16) * (100vw - 340px) / (1400 - 340))!important;
+   font-size: calc(16px + (18 - 16) * (100vw - 340px) / (1400 - 340)) !important;
 }
 .fs-20 {
    font-size: calc(18px + (20 - 18) * (100vw - 340px) / (1400 - 340));
@@ -203,6 +203,7 @@ h6 {
    height: 100vh;
    width: 280px;
    background: getColor(bg-secondary);
+   z-index: 1;
 
    .brand-logo {
       height: 68px;
@@ -351,6 +352,41 @@ h6 {
    padding: 8px;
    .card {
       background: getColor(bg-secondary);
+      // z-index: -1;
+   }
+   .card-header {
+      border-bottom: none;
+      background: getColor(bg-secondary);
+   }
+   .card-footer {
+      border-top: none;
+      background: getColor(bg-secondary);
+   }
+   .border-top,
+   .border-end,
+   .border-start,
+   .border-bottom {
+      border-color: getColor(hover-bg) !important;
+   }
+   .profile-card {
+      height: 270px;
+      max-height:270px ;
+      .card-footer {
+         padding: 0;
+         div {
+            width: 50%;
+         }
+      }
+   }
+   .d-card {
+      height: 131px;
+   }
+   //@APEXCHARTS
+   #line-adwords,#chart-bar,#chart-circle{
+      text,span,tspan{
+         fill: getColor(text-deep)!important;
+         color:getColor(text-deep)!important;
+      }
    }
 }
 
@@ -358,11 +394,7 @@ h6 {
    // background: linear-gradient(93deg, #53b2fe, #065af3);
    // background-color: #004f09;
    // background-image: linear-gradient(93deg, #53fe6a, #004f09);
-   background: linear-gradient(
-      to right,
-      #2d832f,
-      #6ddd77
-   ); 
+   background: linear-gradient(to right, #2d832f, #6ddd77);
 
    color: #fff;
    font-weight: 500;
@@ -375,7 +407,7 @@ h6 {
 .custom-badge {
    color: getColor(base);
    font-size: 11px;
-   padding: 1px 5px!important;
+   padding: 1px 5px !important;
    text-transform: uppercase;
    border: 1px getColor(base) solid;
    border-radius: 3px;
@@ -588,8 +620,8 @@ h6 {
          padding-right: 8px;
          border-right: 1px #88888821 solid;
          width: calc(100% - 225px);
-         .package-image{
-            img{
+         .package-image {
+            img {
                width: 160px;
                height: 100px;
                object-fit: cover;
@@ -597,7 +629,7 @@ h6 {
             }
             padding-right: 10px;
          }
-         .package-name{
+         .package-name {
             white-space: nowrap;
             width: 390px;
             overflow: hidden;
@@ -611,7 +643,7 @@ h6 {
          flex-wrap: wrap;
          padding-bottom: 8px;
          min-width: 220px;
-         .price{
+         .price {
             text-align: end;
          }
       }
@@ -659,21 +691,21 @@ h6 {
       }
    }
 }
-@media only screen and (max-width: 1129.98px){
+@media only screen and (max-width: 1129.98px) {
    .package-card {
       .card-body {
          flex-direction: column;
          .package-details {
             width: 100%;
             border-right: none;
-            .package-name{
+            .package-name {
                width: calc(100%);
             }
          }
          .pricing {
             padding-top: 8px;
             justify-content: space-between;
-            .price{
+            .price {
                text-align: left;
             }
          }

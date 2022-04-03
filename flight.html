@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./assets/js/datepicker/datepicker.css">
+   <link rel="stylesheet" href="./assets/css/main.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <title>Guideasy</title>
+</head>
+
+<body>
+   <header>
+   </header>
+   <main>
+      <section class="sidebar">
+         <div class="position-relative brand-logo">
+            <a href="index.html">
+               <img src="./assets/images/brand-logo.png" alt="Logo">
+            </a>
+         </div>
+         <div class="d-flex flex-column justify-content-between all-menu">
+            <div>
+               <div class="main-menu">
+                  <ul>
+                     <li>
+                        <a href="index.html" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-layer'></i>
+                              <span>Dashboard</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-bell'>
+                                 <span
+                                    class="position-absolute translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                              </i>
+                              <span>Activity</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-book-alt'></i>
+                              <span>Schedule</span>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="main-menu">
+                  <div class="d-flex justify-content-between align-items-center menu-title">
+                     <div>Shared</div>
+                     <div><i class='bx bx-plus'></i></div>
+                  </div>
+                  <ul>
+                     <li>
+                        <a href="holiday.html" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bxs-zap'></i>
+                              <span>Holiday</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="flight.html" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bxs-plane-take-off'></i>
+                              <span>Flight</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-layer'></i>
+                              <span>Guide</span>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="main-menu">
+                  <div class="d-flex justify-content-between menu-title">
+                     <div>Projects</div>
+                  </div>
+                  <ul>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bxs-checkbox color-teal-300'></i>
+                              <span>Personal</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bxs-checkbox color-blue-300'></i>
+                              <span>Business</span>
+                           </div>
+
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bxs-checkbox color-indigo-300'></i>
+                              <span>Travel</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-plus fs-16 border rounded-3'></i>
+                              <span class="text-base">Add New Project</span>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div>
+               <div class="main-menu">
+                  <ul>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-cog'></i>
+                              <span>Settings</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="javascript:;" class="d-flex justify-content-between align-items-center">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-color'></i>
+                              <span>Help</span>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="dropdown">
+                  <a role="button" id="user-btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                     <div class="d-flex align-items-center justify-content-between user-btn">
+                        <div class="d-flex align-items-center ">
+                           <div class="user-img">
+                              <img src="./assets/images/aamroni.jpg" alt="">
+                           </div>
+                           <div class="lh-1 user-info">
+                              <p class="text-dark fw-400">md.aamroni</p>
+                              <p class="fs-14 text-base">aamroni@gmail.com</p>
+                           </div>
+                        </div>
+                        <div>
+                           <i class='bx bx-expand-vertical text-base'></i>
+                        </div>
+                     </div>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="user-btn-dropdown">
+                     <li>
+                        <a class="dropdown-item" href="javascript:;">
+                           <div class="d-flex align-items-center user-btn">
+                              <div class="user-img">
+                                 <img src="./assets/images/aamroni.jpg" alt="">
+                              </div>
+                              <div class="lh-1">
+                                 <p class="text-dark fw-400">md.aamroni</p>
+                                 <p class="fs-14 text-base">aamroni@gmail.com</p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="javascript:;">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-folder text-base fs-22 me-2'></i>
+                              <span class="fs-14 fw-400">Integration</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="javascript:;">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-time-five text-base fs-20 me-2'></i>
+                              <span class="fs-14 fw-400">History</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="javascript:;">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-star text-warning fs-22 me-2'></i>
+                              <span class="fs-14 fw-400">Upgrade to Pro</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="javascript:;">
+                           <div class="d-flex align-items-center">
+                              <i class='bx bx-log-out bx-flip-horizontal text-base fs-22 me-2'></i>
+                              <span class="fs-14 fw-400">Logout</span>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="ps-3 mt-2">
+                        <span class="text-base fs-14 fw-400 lh-1">v1.0.01 . Guideasy Ltd</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="header">
+         <div class="d-flex justify-content-end">
+            <div class="d-flex aligh-items-center">
+               <i class='bx bxs-cart-alt fs-20 text-dark me-2'></i>
+               <div class="fs-16 text-dark">
+                  <span class="me-1">Cart</span><span>(0)</span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="content">
+         <div class="row g-2">
+            <div class="col-xxl-9">
+               <div class="card flight-ticket">
+                  <div class="ticket-body">
+                     <div class="body-left">
+                        <div class="d-flex airline-details">
+                           <img src="./assets/images/us-bd.png" alt="">
+                           <div class="fw-bold lh-sm">
+                              <p class="fs-14 text-dark">US-Bangla Airlines</p>
+                              <p class="fs-12 text-muted">BS201</p>
+                           </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center from-to-details">
+                           <div class="lh-sm from-route">
+                              <div class="fs-18 text-dark">
+                                 <span>DAC</span>
+                                 <span class="fw-bold">10:00</span>
+                              </div>
+                              <div class="fs-12 fw-bold">
+                                 <p>Web 20 Apr</p>
+                                 <p>Dhaka</p>
+                              </div>
+                           </div>
+                           <div class="text-center fs-12 fw-500 duration-time">
+                              <div> 1h 10m</div>
+                              <i class="fa-solid fa-plane"></i>
+                              <hr>
+                              <i class="fa-solid fa-circle"></i>
+                              <div> 1 Stop via BKK</div>
+                           </div>
+                           <div class="lh-sm to-route">
+                              <div class="fs-18 text-dark">
+                                 <span>DAC</span>
+                                 <span class="fw-bold">10:00</span>
+                              </div>
+                              <div class="fs-12 fw-bold">
+                                 <p>Web 20 Apr</p>
+                                 <p>Dhaka</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="body-right lh-sm">
+                        <div class="me-3 fw-bold text-end">
+                           <p class="fs-14 text-decoration-line-through">BDT 13500</p>
+                           <p class="fs-18 text-dark">BDT 12200</p>
+                        </div>
+                        <div>
+                           <a href="javascript:;" class="btn-primary ">Book Now</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 ticket-footer">
+                     <div class="d-flex align-items-center lh-sm">
+                        <div class="fw-900 custom-badge">Publish</div>
+                        <ul class="d-flex fs-12">
+                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fast web browsing (fee)">
+                              <i class="fa-solid fa-wifi"></i>
+                           </li>
+                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Seatback on-demand video">
+                              <i class="fa-solid fa-tv"></i>
+                           </li>
+                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Meal provided">
+                              <i class="fa-solid fa-utensils"></i>
+                           </li>
+                           <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alcohol & beverages provided">
+                              <i class="fa-solid fa-martini-glass"></i>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="d-flex fs-14 fw-500 ">
+                        <div class="text-dark me-3">
+                           <i class="fa-solid fa-circle-question fs-12"></i>
+                           Refundable</div>
+                        <div>
+                           <a class="text-primary" data-bs-toggle="collapse" href="#card_2" role="button"
+                              aria-expanded="false" aria-controls="">
+                              Flight Details
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collapse" id="card_2">
+                     <div class="flight-details">
+                        <ul class="nav nav-tabs">
+                           <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active"
+                                 href="#FlightDetails">Flight Details</a></li>
+                           <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#FareSummary">Fare
+                                 Summary</a></li>
+                           <li class="nav-item">
+                              <a data-bs-toggle="tab" class="nav-link" href="#DiscountGross">Discount & Gross</a>
+                           </li>
+                           <li class="nav-item">
+                              <a data-bs-toggle="tab" class="nav-link" href="#Baggage">Baggage</a>
+                           </li>
+                           <li class="nav-item">
+                              <a data-bs-toggle="tab" class="nav-link" href="#Cancellation">Cancellation</a>
+                           </li>
+                           <li class="nav-item">
+                              <a data-bs-toggle="tab" class="nav-link" href="#DateChange">Date Change</a>
+                           </li>
+                        </ul>
+                        <div class="tab-content mt-2">
+                           <div id="FlightDetails" class="tab-pane active">
+                              <div class="d-flex">
+                                 <div class="border border-success rounded-3 px-2 py-1 fs-14 text-primary">
+                                    <span>Dhaka</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <span>Kolkata</span>
+                                 </div>
+                              </div>
+                              <div class="d-flex mt-2 details-content">
+                                 <div class="left-details">
+                                    <div class="position-absolute">
+                                       <i class="fa-solid fa-plane"></i>
+                                       <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                       <div class="fs-14 text-dark fw-900">
+                                          <span>18:35</span>
+                                          <span class="px-2">.</span>
+                                          <span>11 Apr 2022</span>
+                                          <span class="px-2">.</span>
+                                          <span>Dhaka (DAC)</span>
+                                          <span class="fs-12 text-base fw-400">Terminal-2</span>
+                                       </div>
+                                       <div class="my-2 fs-12 fw-bold">
+                                          <span>Travel time:</span>
+                                          <span class="text-danger">1h 05m</span>
+                                       </div>
+                                       <div class="fs-14 text-dark fw-900 mb-2">
+                                          <span>19:40</span>
+                                          <span class="px-2">.</span>
+                                          <span>11 Apr 2022</span>
+                                          <span class="px-2">.</span>
+                                          <span>Kolkata (CCU)</span>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                       <img class="me-2" src="./assets/images/us-bd.png" width="27" height="23" alt="">
+                                       <div class="test-base fs-12 fw-bold lh-normal">
+                                          <div class="mb-2 d-flex flex-wrap">
+                                             <p>Singapore Airlines</p>
+                                             <p><span class="px-2">.</span> SQ516</p>
+                                             <p><span class="px-2">.</span>Economy</p>
+                                             <p><span class="px-2">.</span>7M8</p>
+                                             <p><span class="px-2">.</span>
+                                                <i class="fa-solid fa-couch"></i> B(9)
+                                             </p>
+                                          </div>
+                                          <div class="d-flex flex-wrap">
+                                             <p class="pe-2">Adult</p>
+                                             <p>
+                                                <span class="px-2">.</span>
+                                                <i class="fa-solid fa-suitcase-rolling"></i> Check-in:
+                                                <span class="text-dark">30kg</span>
+                                             </p>
+                                             <p>
+                                                <span class="px-2">.</span>
+                                                <i class="fa-solid fa-suitcase"></i>
+                                                Cabin:
+                                                <span class="text-dark">1 Piece</span>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="right-details">
+                                    <ul class="fs-14">
+                                       <li>
+                                          <i class="fa-solid fa-wheelchair"></i>
+                                          <span>76 cm seat pitch</span>
+                                       </li>
+                                       <li>
+                                          <i class="fa-solid fa-plane"></i>
+                                          <span>737 MAX (narrowbody)</span>
+                                       </li>
+                                       <li>
+                                          <i class="fa-solid fa-table-cells-large"></i>
+                                          <span>3-3 seat layout</span>
+                                       </li>
+                                       <li>
+                                          <i class="fa-solid fa-wifi"></i>
+                                          <span>Basic web browsing (fee)</span>
+                                       </li>
+                                       <li>
+                                          <i class="fa-brands fa-usb"></i>
+                                          <span>Power & USB outlets</span>
+                                       </li>
+                                       <li>
+                                          <i class="fa-solid fa-tv"></i>
+                                          <span>Seatback on-demand video</span>
+                                       </li>
+                                       <li>
+                                          <i class="fa-solid fa-utensils"></i>
+                                          <span>Meal provided</span>
+                                       </li>
+                                       <li>
+                                          <i class="fa-solid fa-martini-glass"></i>
+                                          <span>Alcohol & beverages provided</span>
+                                       </li>
+                                    </ul>
+
+                                    <div class="text-primary fw-bold fs-14 mt-2 flight-show-more-btn">+ Show More
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="FareSummary" class="tab-pane fade">
+                              <table>
+                                 <tbody>
+                                    <tr>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                    </tr>
+                                    <tr>
+                                       <td>row 1 Lorem, ipsum dolor.</td>
+                                       <td>row 1</td>
+                                       <td>row 1</td>
+                                       <td>row 1</td>
+                                       <td>row 1</td>
+                                    </tr>
+                                    <tr>
+                                       <td>row 2</td>
+                                       <td>row 2</td>
+                                       <td>row 2</td>
+                                       <td>row 2</td>
+                                       <td>row 2</td>
+                                    </tr>
+                                    <tr>
+                                       <td>row 3</td>
+                                       <td>row 3</td>
+                                       <td>row 3</td>
+                                       <td>row 3</td>
+                                       <td>row 3</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div id="DiscountGross" class="tab-pane fade">
+                              <table>
+                                 <tbody>
+                                    <tr>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                    </tr>
+                                    <tr>
+                                       <td>row 1 Lorem, ipsum dolor.</td>
+                                       <td>row 1</td>
+                                       <td>row 1</td>
+                                       <td>row 1</td>
+                                       <td>row 1</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div id="Baggage" class="tab-pane fade">
+                              <table>
+                                 <tbody>
+                                    <tr>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                       <th>Row head</th>
+                                    </tr>
+                                    <tr>
+                                       <td>row 1 Lorem, ipsum dolor.</td>
+                                       <td>row 1</td>
+                                       <td>row 1</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div id="Cancellation" class="tab-pane fade">
+                              <table>
+                                 <tbody>
+                                    <tr>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Time frame</p>
+                                          <p>(From Scheduled flight departure)</p>
+                                       </th>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
+                                          <p>(Per passenger)</p>
+                                       </th>
+                                    </tr>
+                                    <tr>
+                                       <td>row 1 Lorem, ipsum dolor.</td>
+                                       <td>row 1</td>
+                                    </tr>
+                                    <tr>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Time frame</p>
+                                          <p>(From Scheduled flight departure)</p>
+                                       </th>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
+                                          <p>(Per passenger)</p>
+                                       </th>
+                                    </tr>
+                                    <tr>
+                                       <td>row 1 Lorem, ipsum dolor.</td>
+                                       <td>row 1</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              <div class="mt-2 border rounded-3 border-danger bg-danger bg-opacity-10 px-2 py-1 d-flex">
+                                 <div><i class="fa-solid fa-triangle-exclamation fs-18 text-danger me-2"></i></div>
+                                 <div class="text-danger fs-12">*Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Eius laboriosam voluptas beatae quidem consequuntur molestias tempore nisi.
+                                    Earum, omnis sit! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Culpa, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                    quasi ipsam vitae vero impedit incidunt iste? Cum quis doloribus porro?</div>
+                              </div>
+                           </div>
+                           <div id="DateChange" class="tab-pane fade">
+                              <table>
+                                 <tbody>
+                                    <tr>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Time frame</p>
+                                          <p>(From Scheduled flight departure)</p>
+                                       </th>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
+                                          <p>(Per passenger)</p>
+                                       </th>
+                                    </tr>
+                                    <tr>
+                                       <td>row 1 Lorem, ipsum dolor.</td>
+                                       <td>row 1</td>
+                                    </tr>
+                                    <tr>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Time frame</p>
+                                          <p>(From Scheduled flight departure)</p>
+                                       </th>
+                                       <th class="lh-sm">
+                                          <p class="fs-14">Airline Fee + Flyhub Fee</p>
+                                          <p>(Per passenger)</p>
+                                       </th>
+                                    </tr>
+                                    <tr>
+                                       <td>row 1 Lorem, ipsum dolor.</td>
+                                       <td>row 1</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+
+
+                              <div class="mt-2 border rounded-3 border-danger bg-danger bg-opacity-10 px-2 py-1 d-flex">
+                                 <div><i class="fa-solid fa-triangle-exclamation fs-18 text-danger me-2"></i></div>
+                                 <div class="text-danger fs-12">*Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Eius laboriosam voluptas beatae quidem consequuntur molestias tempore nisi.
+                                    Earum, omnis sit!</div>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-xxl-3">
+               <div class="card">
+                  <div class="card-body">
+                     <div class="fs-16 text-dark">Holiday Booking</div>
+                     <div class="d-flex justify-content-between align-items-center">
+                        <div class="fs-28 fw-900 text-dark">23</div>
+                        <div>
+                           <img src="./assets/images/travelers.svg" width="100px" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card mt-2">
+                  <div class="card-body">
+                     <div class="fs-16 text-dark">Flight Booking</div>
+                     <div class="d-flex justify-content-between align-items-center">
+                        <div class="fs-28 fw-900 text-dark">23</div>
+                        <div>
+                           <img src="./assets/images/air-flight.svg" width="100px" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card mt-2">
+                  <div class="card-body">
+                     <div class="fs-16 text-dark">Holiday Booking</div>
+                     <div class="d-flex justify-content-between align-items-center">
+                        <div class="fs-28 fw-900 text-dark">23</div>
+                        <div>
+                           <img src="./assets/images/travelers.svg" width="100px" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+      integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+      crossorigin=" anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./assets/js/select.js"></script>
+   <script src="./assets/js/datepicker/datepicker.js"></script>
+   <script src="./assets/js/datepicker/datepicker.en.js"></script>
+   <script src="./assets/js/app.js"></script>
+   <script type="text/javascript">
+      $(".datepicker-here").datepicker({
+         language: "en",
+         dateFormat: "D dd MM, yyyy",
+      });
+
+      $(".only-time").datepicker({
+         dateFormat: " ",
+         timepicker: true,
+         classes: "only-timepicker"
+      });
+   </script>
+</body>
+
+</html>
